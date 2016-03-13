@@ -332,12 +332,11 @@ while True:
 				stop_motor()
 				
 			#needs tuning to give a reasonable threshold, if less than 20cm to waypoint
-			#elif distance < 200:
-			print dest_long
-			
-			if avg_long > (dest_long+ 0.5) or avg_long < (dest_long - 0.5):
-				if avg_lat > (dest_lat + 0.5) or avg_lat < (dest_lat- 0.5):
-					line = line+1
+			elif distance < 200:
+				line = line+1
+			#if avg_long > (dest_long+ 0.5) or avg_long < (dest_long - 0.5):
+				#if avg_lat > (dest_lat + 0.5) or avg_lat < (dest_lat- 0.5):
+					
 					
 			
 
